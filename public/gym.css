@@ -1,0 +1,143 @@
+*{
+    color: white;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url(https://i.makeagif.com/media/10-10-2023/ONdX0Y.gif);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;     /* ensures that the image covers the entire screen */
+}
+
+.header{
+    height: 150px;
+}
+
+/* The left side of the navagation bar */
+
+.left{
+    display: inline-block;
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    left: 24px;
+    top: 24px;
+}
+
+.left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;          /* to crop the image */
+    /* border: 5px solid black; */
+    object-position: 0px 0px;   /* displace the image from the centre */
+    filter: invert();       /* used to invert the colours of the image directly in the CCS */
+}
+
+.left div{
+    text-align: center;
+    width: 106px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+/*  The Navigation bar */
+
+.mid{
+    display: block;
+    width: 50%;
+    margin: 24px auto;
+}
+
+.navbar{
+    background-color: black;
+}
+
+.navbar li{
+    display: inline-block;
+    margin: 12px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    font-size: large;
+}
+
+
+.navbar li a:hover, .navbar li a:active{
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* The right side of navigation bar */
+
+.right{
+    display: inline-block;
+    width: 96px;
+    height: 48px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+}
+
+.btn{
+    background-color: black;
+    width: 96px;
+    height: 32px;
+    margin: 2px;
+    padding: 0px 9px;
+    font-size: 16px;
+    border-left-color: gray;
+    border-top-color: gray;
+    border-right-color: darkgray;
+    border-bottom-color: darkgray;
+
+    cursor: pointer;
+}
+
+.btn:active{
+    border-left-color: darkgray;
+    border-top-color: darkgray;
+    border-right-color: gray;
+    border-bottom-color: gray;
+}
+
+.btn:hover{
+    position: relative;
+    bottom: 1px;
+}
+
+.container{
+    border: 2px solid white;
+    margin: 20px 48px;
+    padding: 50px 50px;
+    width: 20%;
+    border-radius: 25px;
+
+    text-align: center;
+}
+
+.formgroup{
+    margin: 12px 0px;
+    
+}
+
+::placeholder{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.formgroup input{
+    height: 24px;
+    width: 240px;
+    background-color: rgb(16, 16, 32);
+    border: 2px solid black;
+}
+
+.container button{
+    width: 240px;
+}
